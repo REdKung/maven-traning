@@ -1,0 +1,28 @@
+spring:
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    url: jdbc:oracle:thin:@192.168.186.128:1521:xe
+    driver-class-name: oracle.jdbc.OracleDriver
+    username: tistusr
+    password: tistusr1234
+    maximum-pool-size: 10
+  mail:
+    host: 192.168.1.2
+    port: 25
+  jpa:
+    generate-ddl: true
+    show-sql: false
+  freemarker:
+    prefer-file-system-access: false
+tist:
+  admin:
+    debug: true
+    mail-from: online@tist.com.tw
+    upload: D:\upload
+debug: false
+logging:
+  level:
+    org:
+      hibernate: ERROR
+server:
+  port: 8888

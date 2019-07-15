@@ -1,0 +1,30 @@
+spring:
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    url: jdbc:h2:mem:myDb;DB_CLOSE_DELAY=-1;MODE=Oracle;TRACE_LEVEL_FILE=4;TRACE_LEVEL_SYSTEM_OUT=3
+    driver-class-name: org.h2.Driver
+    maximum-pool-size: 10
+    platform: h2
+  mail:
+    host: 192.168.1.2
+    port: 25
+  jpa:
+    generate-ddl: true
+    show-sql: true
+    database-platform: org.hibernate.dialect.H2Dialect
+  freemarker:
+    prefer-file-system-access: false
+  h2:
+    console:
+      enabled: true
+      path: /h2
+tist:
+  admin:
+    debug: true
+    mail-from: online@tist.com.tw
+    upload: D:\upload
+debug: true
+logging:
+  level:
+    org:
+      hibernate: ERROR

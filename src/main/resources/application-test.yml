@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    url: jdbc:oracle:thin:@192.168.1.84:1521:cwisdb
+    driver-class-name: oracle.jdbc.OracleDriver
+    username: cwisusr
+    password: cwisusr1234
+    maximum-pool-size: 3
+  mail:
+    host: 192.168.1.2
+    port: 25
+  jpa:
+    generate-ddl: false
+    show-sql: false
+tist:
+  admin:
+    debug: true
+    mail-from: online@tist.com.tw
+    upload: D:\upload
