@@ -18,7 +18,7 @@
     <properties>
         <java.version>1.8</java.version>
         <mgov-core.version>1.0.16-SNAPSHOT</mgov-core.version>
-        <h2.version>1.4.199</h2.version>
+        <h2.version>2.0.206</h2.version>
         <com.oracle.version>11.1.0.7.0</com.oracle.version>
         <hibernate-jpamodelgen.version>5.4.2.Final</hibernate-jpamodelgen.version>
 
